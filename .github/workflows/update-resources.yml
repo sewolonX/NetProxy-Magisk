@@ -768,7 +768,7 @@ jobs:
       - name: 开启 / 更新 Pull Request
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.SYNC_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: chore/update-resources
           delete-branch: true
           base: main
